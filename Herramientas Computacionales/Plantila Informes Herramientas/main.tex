@@ -1,0 +1,125 @@
+\documentclass[12pt,answers]{exam}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[table,xcdraw]{xcolor}	% Permite escribir en espanol
+\usepackage{footnote}
+\makesavenoteenv{solution}
+\usepackage{amsthm}	
+\usepackage{amsmath}
+\usepackage{moreenum}
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+% Para ecuaciones y demases
+\usepackage{amssymb}						% Para ecuaciones y demases
+\usepackage{float}							% Para manejar la ubicacion de graficos
+\usepackage{verbatim}						% Para escribir codigos
+\usepackage{url}								% Para escribir direcciones web
+\usepackage{subfig}							% Para poner varias figuras en el mismo marco
+\usepackage{psfrag}							% Para hacer reemplazos en las figuras
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{color}
+	\definecolor{ceruleanblue}{rgb}{0.16, 0.32, 0.75}
+	\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+	\definecolor{darkgreen}{rgb}{0.0, 0.2, 0.13}
+\usepackage{multirow,hhline}
+\usepackage[linkcolor=blue,colorlinks=true]{hyperref}
+\def\mathrlap{\mathpalette\mathrlapinternal} 
+\def\mathclap{\mathpalette\mathclapinternal}
+\def\mathllapinternal#1#2{\llap{$\mathsurround=0pt#1{#2}$}}
+\def\mathrlapinternal#1#2{\rlap{$\mathsurround=0pt#1{#2}$}}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{lipsum}
+\usepackage{mdframed}  
+
+
+%----------coso de los cuadritos
+\def\MakeFramed#1{\begin{mdframed}}
+\def\endMakeFramed{\end{mdframed}}
+\renewcommand{\solutiontitle}{\noindent\textsf{\textbf{Respuesta}}\par\noindent}
+
+
+%---------------------------diseñito
+\pagestyle{headandfoot}					% Opcion para tener headers y footers
+\headrule 											% Linea horizontal bajo el header
+
+\firstpageheader{\scriptsize{\includegraphics[scale=0.3]{Pictures/Logo_FCFM.png}}}{} {\scriptsize{Universidad de Chile} \\ \scriptsize{Facultad de Ciencias Físicas y Matemáticas}}
+\runningheader{\scriptsize{\includegraphics[scale=0.3]{Pictures/Logo_FCFM.png}}}{\scriptsize Herramientas Computacionales \\ para la Ingeniería y Ciencias\\ \scriptsize{Otoño 2023}} {\scriptsize{Universidad de Chile} \\ \scriptsize{Facultad de Ciencias Físicas y Matemáticas}}
+
+\footrule
+\footer{}{\scriptsize{P\'agina \thepage\ de \numpages}}{}
+\parindent = 0pt
+\renewcommand\partlabel{(\thepartno.)}
+\renewcommand\thesubpart{\roman{subpart}}
+
+
+
+\begin{document}
+
+\vspace*{\fill}
+\begin{center}
+    \Huge{ \textbf{Laboratorio 0....}} \\
+    \smallskip
+    \LaTeX de actividad.....
+    \smallskip
+\end{center}
+\vspace*{\fill}
+\begin{flushright}  
+    \begin{tabular}{r r}
+        \textbf{Alumno}:  &
+        \begin{tabular}[t]{r}
+            Álvaro Acevedo Díaz 
+        \end{tabular}  \\   \\
+        \textbf{Rut Alumno}: &
+        \begin{tabular}[t]{r}
+            20.283.675-5 
+        \end{tabular} \\  \\
+        \textbf{Curso}:  &
+        \begin{tabular}[t]{r}
+            Herramientas Computacionales \\ para Ingeniería y Ciencias 
+        \end{tabular}  \\   \\
+        \textbf{Código Curso}: &  
+        \begin{tabular}[t]{r}
+            CC1000-5 
+        \end{tabular}  \\   \\
+          \textbf{Profesor}: &
+        \begin{tabular}[t]{r}
+            Valentín Muñoz 
+        \end{tabular} \\  \\
+        \textbf{Profesores Auxiliares}: &
+          \begin{tabular}[t]{r}
+            Valentina Aravena  \\
+            Valentina Montoya 
+        \end{tabular} \\  \\
+        \textbf{Fecha de Entrega}:  &
+        \begin{tabular}[t]{r}
+            21 de Abril, 2023 
+        \end{tabular} 
+    \end{tabular}
+\end{flushright}
+
+\newpage
+\renewcommand*\contentsname{Tabla de Contenidos}
+\tableofcontents
+\renewcommand{\listfigurename}{Lista de Figuras}
+\listoffigures
+\newpage
+\section{Introducción}
+
+\section{Resultados}
+
+\section{Uso de la Herramienta}
+
+\section{Síntesis}
+
+
+
+
+
+\end{document}
